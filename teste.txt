@@ -1,0 +1,51 @@
+PS C:\Users\Rodrigo\desktop\Tarefa_01_ES_Continua\Tarefa_01_ES_Continua> Measure-Command { Invoke-RestMethod -Method Post -Uri "http://localhost:3000/tasks" -Headers @{"Content-Type"="application/json"} -Body '{"title": "Teste", "description": "Tarefa de teste"}' }
+>>
+
+
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 0
+Milliseconds      : 63
+Ticks             : 634090
+TotalDays         : 7,33900462962963E-07
+TotalHours        : 1,76136111111111E-05
+TotalMinutes      : 0,00105681666666667
+TotalSeconds      : 0,063409
+TotalMilliseconds : 63,409
+
+
+
+PS C:\Users\Rodrigo\desktop\Tarefa_01_ES_Continua\Tarefa_01_ES_Continua> Measure-Command { Invoke-RestMethod -Method Get -Uri "http://localhost:3000/tasks" }
+>>
+
+
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 0
+Milliseconds      : 5
+Ticks             : 53100
+TotalDays         : 6,14583333333333E-08
+TotalHours        : 1,475E-06
+TotalMinutes      : 8,85E-05
+TotalSeconds      : 0,00531
+TotalMilliseconds : 5,31
+
+
+
+PS C:\Users\Rodrigo\desktop\Tarefa_01_ES_Continua\Tarefa_01_ES_Continua> Measure-Command { Invoke-RestMethod -Method Delete -Uri "http://localhost:3000/tasks/1" }
+>>
+
+
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 0
+Milliseconds      : 2
+Ticks             : 26046
+TotalDays         : 3,01458333333333E-08
+TotalHours        : 7,235E-07
+TotalMinutes      : 4,341E-05
+TotalSeconds      : 0,0026046
+TotalMilliseconds : 2,6046
