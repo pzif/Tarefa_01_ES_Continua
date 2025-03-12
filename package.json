@@ -1,0 +1,23 @@
+{
+  "name": "tarefa_01_es_continua",
+  "version": "1.0.0",
+  "description": "Atividade Prática: Engenharia de Software Contínua, Experimental e Frameworks Objetivo: Aplicar conceitos de Engenharia de Software Contínua e Experimental utilizando um framework popular para desenvolvimento ágil.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzif/Tarefa_01_ES_Continua.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pzif/Tarefa_01_ES_Continua/issues"
+  },
+  "homepage": "https://github.com/pzif/Tarefa_01_ES_Continua#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
