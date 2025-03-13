@@ -14,10 +14,10 @@ let tasks = [];
 
 // Criar uma nova tarefa
 app.post("/tasks", (req, res) => {
-    const { title, description } = req.body;
+    const { title, description = "" } = req.body;
 
-    if (!title || !description) {
-        return res.status(400).json({ error: "Título e descrição são obrigatórios" });
+    if (!title) {
+        return res.status(400).json({ error: "Título é obrigatório" });
     }
 
     const newTask = { id: uuidv4(), title, description };
@@ -38,8 +38,8 @@ app.put("/tasks/:id", (req, res) => {
     let task = tasks.find((t) => t.id === id);
     if (!task) return res.status(404).json({ error: "Tarefa não encontrada" });
 
-    task.title = title || task.title;
-    task.description = description || task.description;
+    if (title !== undefined) task.title = title;
+    if (description !== undefined) task.description = description;
 
     res.json(task);
 });
